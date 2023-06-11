@@ -1,5 +1,5 @@
 """
-Contains functions for training and testing a PyTorch model.
+Contains multiclass functions for training and testing a PyTorch model.
 """
 import torch
 

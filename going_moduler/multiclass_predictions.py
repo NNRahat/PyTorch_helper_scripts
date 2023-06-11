@@ -1,5 +1,5 @@
 """
-Utility functions to make predictions.
+Utility functions to make predictions of *multiclass classification*.
 
 Main reference for code creation: https://www.learnpytorch.io/06_pytorch_transfer_learning/#6-make-predictions-on-images-from-the-test-set 
 """
