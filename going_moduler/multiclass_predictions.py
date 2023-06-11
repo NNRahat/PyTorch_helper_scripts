@@ -25,7 +25,7 @@ def pred_and_plot_image(
     transform: torchvision.transforms = None,
     device: torch.device = device,
 ):
-    """Predicts on a target image with a target model.
+    """Predicts on a target image with a target model using * Multiclass classification.
 
     Args:
         model (torch.nn.Module): A trained (or untrained) PyTorch model to predict on an image.
