@@ -1,6 +1,7 @@
 """
 Contains binary training functions for training and testing a PyTorch model.
 """
+import torch
 
 # train loop
 def train_steps(model:torch.nn.Module,
