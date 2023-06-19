@@ -15,8 +15,8 @@ def plot_curves(model_0: Dict[str, list[float]],
         plt.legend()
 
         plt.subplot(1,2,2)
-        plt.plot(epochs, model_1["train_acc"] , label="train accuracy")
-        plt.plot(epochs, model_1["test_acc"] , label= "test accuracy")
+        plt.plot(epochs, model_0["train_acc"] , label="train accuracy")
+        plt.plot(epochs, model_0["test_acc"] , label= "test accuracy")
         plt.title("Accuracy")
         plt.xlabel("Epoch")
         plt.legend()
