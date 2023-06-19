@@ -2,14 +2,7 @@ import matplotlib.pyplot as plt
 from typing import Tuple,List,Dict
 def plot_curves(model_0: Dict[str, list[float]],
                 model_1:Dict[str, list[float]] = None):
-    train_loss = results["train_loss"]
-    test_loss = results["test_loss"]
-
-    train_acc = results["train_acc"]
-    test_acc = results["test_acc"]
-
-
-    epochs = range(len(model_1["train_loss"]))
+    epochs = range(len(model_0["train_loss"]))
 
     plt.figure(figsize = (15,7))
 
