@@ -6,7 +6,7 @@ def plot_curves(model_0: Dict[str, list[float]],
 
     plt.figure(figsize = (15,7))
 
-    if not model_2:
+    if not model_1:
         plt.subplot(1,2,1)
         plt.plot(epochs, model_0["train_loss"], label = "train loss")
         plt.plot(epochs, model_0["test_loss"], label = "test_loss")
@@ -21,7 +21,7 @@ def plot_curves(model_0: Dict[str, list[float]],
         plt.xlabel("Epoch")
         plt.legend()
 
-    if model_2:
+    if model_1:
         plt.subplot(2,2,1)
         plt.plot(epochs, model_0["train_loss"], label="train_loss")
         plt.plot(epochs, model_1["test_loss"], label="test_loss")
