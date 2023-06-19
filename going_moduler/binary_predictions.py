@@ -75,7 +75,7 @@ def pred_and_plot_image(
     target_image_pred_probs = torch.sigmoid(target_image_pred)
 
     # Convert prediction probabilities -> prediction labels
-    target_image_pred_label = torch.round(target_image_pred_probs)
+    target_image_pred_label = torch.round(target_image_pred_probs).type(torch.int64).item()
 
     # Plot image with predicted label and probability
     plt.figure()
