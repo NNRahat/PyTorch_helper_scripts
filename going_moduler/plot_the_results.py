@@ -42,6 +42,3 @@ def plot_curves(model_0: Dict[str, list[float]],
     plt.plot(epochs, model_1["test_acc"], label="test_acc")
     plt.title("Train_loss")
     plt.legend()
-
-plot_curves(model_0 = model_0_results,
-            model_1 = model_0_results)
