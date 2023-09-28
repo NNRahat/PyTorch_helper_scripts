@@ -13,6 +13,7 @@ def create_dataloaders(
     train_dir: str, 
     test_dir: str, 
     transform: transforms.Compose, 
+    drop_last: bool = False,
     batch_size: int, 
     num_workers: int=NUM_WORKERS
 ):
