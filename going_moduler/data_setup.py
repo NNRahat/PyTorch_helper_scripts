@@ -52,6 +52,7 @@ def create_dataloaders(
       train_data,
       batch_size=batch_size,
       shuffle=True,
+      drop_last= drop_last,
       num_workers=num_workers,
       pin_memory=True,
   )
@@ -59,6 +60,7 @@ def create_dataloaders(
       test_data,
       batch_size=batch_size,
       shuffle=False,
+      drop_last= drop_last,
       num_workers=num_workers,
       pin_memory=True,
   )
