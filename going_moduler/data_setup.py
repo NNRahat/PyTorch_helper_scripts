@@ -14,7 +14,7 @@ def create_dataloaders(
     test_dir: str, 
     transform: transforms.Compose, 
     drop_last: bool = False,
-    batch_size: int, 
+    batch: int, 
     num_workers: int=NUM_WORKERS
 ):
   """Creates training and testing DataLoaders.
@@ -50,7 +50,7 @@ def create_dataloaders(
   # Turn images into data loaders
   train_dataloader = DataLoader(
       train_data,
-      batch_size=batch_size,
+      batch_size=batch,
       shuffle=True,
       drop_last= drop_last,
       num_workers=num_workers,
@@ -58,7 +58,7 @@ def create_dataloaders(
   )
   test_dataloader = DataLoader(
       test_data,
-      batch_size=batch_size,
+      batch_size=batch,
       shuffle=False,
       drop_last= drop_last,
       num_workers=num_workers,
